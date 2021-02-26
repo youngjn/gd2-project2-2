@@ -1,0 +1,172 @@
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar{width:1px;height:1px;}
+::-webkit-scrollbar-button{width:1px;height:1px;}
+
+.menu {
+	width: 100vw;
+	height: 100px;
+	z-index: 1;
+	position: fixed;
+	background: /*#2b3c89*/white;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.menu .brand-menu {
+	width: 80%;
+	margin: 0 auto;
+	padding: 25px;
+}
+
+.menu .brand-menu img {
+	margin: 0 15px;
+}
+
+.horizontal-scroll-wrapper {
+  position:absolute;
+  display:block;
+  top:0;
+  left:0;
+  padding: 0;
+  width:100vh;
+  max-height:100vw;
+  margin:0;
+  background:#abc;
+  overflow-y:auto;
+  overflow-x:hidden;
+  transform: rotate(-90deg) translateY(-100vh);
+  transform-origin:right top;
+}
+
+.horizontal-scroll-wrapper > div {
+  display:block;
+  background:#cab;
+  transform: rotate(90deg) translateX(900px);
+  transform-origin: right top;
+}
+
+.squares{
+  padding: 0;
+}
+
+.squares > div{
+	position: relative;
+  width:900px;
+  height:900px;
+  margin:0;
+}
+
+.horizontal-scroll-wrapper .night1 {
+	background: url("images/nightview_pixel1.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.horizontal-scroll-wrapper .night2 {
+	background: url("images/nightview_pixel2.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.horizontal-scroll-wrapper .night3 {
+	background: url("images/nightview_pixel3.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.horizontal-scroll-wrapper .night4 {
+	background: url("images/nightview_pixel4.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.horizontal-scroll-wrapper .night5 {
+	background: url("images/nightview_pixel5.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.horizontal-scroll-wrapper .night6 {
+	background: url("images/nightview_pixel6.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.horizontal-scroll-wrapper .night7 {
+	background: url("images/nightview_pixel7.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.horizontal-scroll-wrapper .night8 {
+	background: url("images/nightview_pixel8.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.horizontal-scroll-wrapper.squares > div .brand {
+	width: 100px;
+	height: 250px;
+	position: absolute;
+}
+
+.horizontal-scroll-wrapper.squares > div .nike-box {
+	top: 200px;
+	left: 200px;
+}
+
+.horizontal-scroll-wrapper.squares > div .adidas-box {
+	top: 100px;
+	left: 400px;
+}
+
+.horizontal-scroll-wrapper.squares > div .reebok-box {
+	top: 400px;
+	left: 150px;
+}
+
+.horizontal-scroll-wrapper.squares > div .fila-box {
+	top: 50px;
+	left: 300px;
+}
+
+.horizontal-scroll-wrapper.squares > div .brand .box {
+	width: 100px;
+	height: 100px;
+	background: url(images/box.png);
+	background-size: cover;
+	background-position: center;
+	margin-top: 10px;
+}
+
+.horizontal-scroll-wrapper.squares > div .brand .nike {
+	background: url(images/logo/nike_name.png) no-repeat;
+}
+
+.horizontal-scroll-wrapper.squares > div .brand .adidas {
+	background: url(images/logo/adidas_name.png) no-repeat;
+}
+
+.horizontal-scroll-wrapper.squares > div .brand .levis {
+	background: url(images/logo/levis_name.png) no-repeat;
+}
+
+.horizontal-scroll-wrapper.squares > div .brand .reebok {
+	background: url(images/logo/reebok_name.png) no-repeat;
+}
+
+.horizontal-scroll-wrapper.squares > div .brand .fila {
+	background: url(images/logo/fila_name.png) no-repeat;
+}
+
+.horizontal-scroll-wrapper.squares > div .brand .brand-name {
+	width: 100px;
+	height: 100px;
+	background-position: center bottom;
+	background-size: 40%;
+}
